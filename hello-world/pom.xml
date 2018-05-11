@@ -40,6 +40,9 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
+                        <configuration>
+                            <dataFile>target/jacoco.exec</dataFile>
+                        </configuration>
                     </execution>
                     <execution>
                         <id>check</id>
