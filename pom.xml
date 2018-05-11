@@ -19,5 +19,29 @@
     </properties>
 
     <dependencyManagement></dependencyManagement>
+         
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.eluder.coveralls</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <version>4.3.0</version>
+                <configuration>
+                    <!--<jacocoReports>-->
+                        <!--<jacocoReport>hello-world/target/site/jacoco-it/jacoco.xml</jacocoReport>-->
+                    <!--</jacocoReports>-->
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>report-coverage</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
