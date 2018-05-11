@@ -28,7 +28,7 @@
                 <version>4.3.0</version>
                 <configuration>
                     <jacocoReports>
-                        <jacocoReport>hello-world/target/coverage/jacoco.xml</jacocoReport>
+                        <jacocoReport>${project.basedir}/hello-world/target/coverage/jacoco.xml</jacocoReport>
                     </jacocoReports>
                 </configuration>
             </plugin>
