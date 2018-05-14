@@ -6,4 +6,8 @@ public class Hello {
         if (name == null) name = "Anonymous";
         return "Hello, " + name;
     }
+    
+    public void untestedMethod() {
+        System.out.println("test me, please!");
+    }
 }
